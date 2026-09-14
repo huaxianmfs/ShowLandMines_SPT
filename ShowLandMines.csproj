@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ShowLandMines</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BepInEx 6 IL2CPP 核心 -->
+    <Reference Include="BepInEx.Core">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\core\BepInEx.Core.dll</HintPath>
+    </Reference>
+
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+
+    <Reference Include="0Harmony">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+
+    <!-- IL2CPP 基础 mscorlib，必须引用 -->
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+
+    <!-- 游戏程序集 -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\interop\Assembly-CSharp.dll</HintPath>
+    </Reference>
+
+    <!-- Unity interop -->
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\interop\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\SPT-5.0.0-47242-BE\BepInEx\interop\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
