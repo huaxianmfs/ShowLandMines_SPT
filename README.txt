@@ -1,4 +1,4 @@
-ShowLandMines（增强版）
+ShowLandMines 我称之为地图边界之友
 一个用于 SPT5.0.0 BE 的 BepInEx 插件，可以可视化地图上的雷区与狙击 AI 区域，并且能一键禁用/启用雷区和狙击区。
 
 本插件基于原版 ShowLandMines 修改而来，修复了原版在 IL2CPP 环境下无法真正禁用雷区/狙击区的问题，并修改了按键操作。
